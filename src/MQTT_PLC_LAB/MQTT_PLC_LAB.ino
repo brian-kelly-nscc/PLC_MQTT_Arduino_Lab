@@ -14,17 +14,17 @@
 // IMPORTANT: Each board on the same network must have a unique MAC address.
 // Change the 'mac' value below if using multiple boards.
 
-#define BOARD_NAME "PLC-Board-01"
-#define PLC_IP "192.168.1.99" // Target PLC IP address for this board
+#define BOARD_NAME "BrianK"
+#define PLC_IP "192.168.60.50" // Target PLC IP address for this board
 
 // Static network configuration
-IPAddress ip(192, 168, 1, 177);        // Change as needed for your network
+IPAddress ip(192, 168, 60, 230);        // Change as needed for your network
 IPAddress subnet(255, 255, 255, 0);    // Network's subnet mask
-IPAddress dns(192, 168, 1, 1);
-IPAddress gateway(192, 168, 1, 1);
+IPAddress dns(192, 168, 60, 1);
+IPAddress gateway(192, 168, 60, 1);
 
 // MQTT Broker IP address (update this to match your VM's broker)
-const char* mqtt_server = "192.168.1.131";
+const char* mqtt_server = "192.168.60.150";
 
 // MAC address for the Ethernet shield
 // IMPORTANT: Change this if you have multiple boards on the same network.
